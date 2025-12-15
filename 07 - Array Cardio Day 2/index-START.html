@@ -59,6 +59,14 @@
 
     console.log(requiredIndex);
 
+    const newComments = [
+      ...comments.slice(0, requiredIndex),
+      ...comments.slice(requiredIndex+1)
+    ];
+
+    console.table(comments);
+    console.table(newComments);
+
   </script>
 </body>
 </html>
